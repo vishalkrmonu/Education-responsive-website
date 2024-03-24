@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+}
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 20%;
+    border: 2px solid white;
+    border-radius: 50px;
+    margin: 2px;
+}
+.nav-list{
+ width: 70%;
+ display: flex;
+ align-items: center;
+}
+.nav-list li{
+list-style: none;
+padding: 11px 25px;
+}
+.nav-list li a{
+text-decoration: none;
+color: white;
+font-size: 17px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.nav-list li a:hover{
+    text-decoration: none;
+    color:gray;
+    }
+.rightNav{
+    width: 30%;
+    text-align: right;
+    padding: 0 23px;
+}
+#search{
+    padding: 5px;
+    font-size: 15px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.background{
+background:rgba(0,0, 0, 0.7) url('../img/bg.jpg');
+background-size: cover;
+background-blend-mode: darken;
+}
+.firstSection{
+    height: 100vh;
+}
+.box-main{
+   display: flex;
+   justify-content: center;
+   align-items: center;  
+   color: white;
+   width: 50%;
+   margin: auto;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   height: 75%;
+}
+.firstHalf{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.secondHalf{
+    width: 30%;
+}
+.secondHalf img{
+width: 80%;
+border: 2px solid white;
+border-radius: 143px;
+display: block;
+margin: auto;
+
+}
+.text-big{
+font-size: 29px;
+
+}
+.text-small{
+font-size: 14px;
+}
+.btn{
+    padding: 4px 15px;
+    border: 2px solid rgb(250, 247, 247);
+    border-radius: 8px;
+    margin: 15px 3px; 
+    background: none;
+    color: white;
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.btn-sm{
+    padding: 3px 3px;
+    vertical-align: middle;
+    font-size: 16px;
+}
+.section{
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+width: 80%;
+margin: auto;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+padding: 20px;
+
+}
+.section-left{
+flex-direction: row-reverse;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+width: 80%;
+margin: auto;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+padding: 20px;
+
+    }
+.paras{
+    padding: 0 70px;
+}
+.sectionTag{
+    padding: 12px 0px;
+}
+.thumbnail img{
+    width: 200px;
+    border: 2px solid black;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+.contact{
+    background-color: rgb(251, 249, 246);
+    height: 620px;
+}
+.text-center{
+    text-align: center;
+    padding-top: 55px ;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        
+}
+.form{
+    max-width: 400px;
+    margin: 3px auto;
+}
+.form-input{
+    margin: 15px 0px;
+    padding: 2px 13px;
+    width: 100%;
+    font-size: 15px;
+    border: 2px solid gray;
+    border-radius: 6px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.btn-dark{
+    color: black;
+    border: 2px solid gray;
+}
+.text-footer{
+    text-align: center;
+    padding: 15px 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:white;
+}
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top:10%;
+}
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 2px 2px;
+}
+
+@media only screen and (max-width: 1002px){
+    .nav-list{
+        flex-direction: column;
+    }
+    .navbar{
+        flex-direction: column;
+    height: 313px;
+        transition: all 0.7s ease-out;
+    }
+    .rightNav{
+        text-align: center;
+    }
+    .secondHalf img{
+        width: 50%;
+        margin-top: 40px;
+    }
+    .box-main{
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+    #search{
+        width: 100%;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav-resp{
+        height: 72px;
+    }
+    .v-class-resp{
+        opacity: 0;
+    }
+    .section{
+        flex-direction: column-reverse;
+    }
+    .section-left{
+        flex-direction: column-reverse;
+    }
+    .text-small{
+text-align: center;
+    }
+    .text-big{
+        text-align: center;
+        margin-top: 2px;
+    }
+    .button{
+        text-align: center;
+    }
+    .paras{
+        padding: 0px;
+    }
+    .form-input{
+        width: 85%;
+    }
+
+}
